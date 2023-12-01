@@ -1,0 +1,32 @@
+.img-wrap {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+.image-content {
+     
+    max-width:60%; 
+    display: block;
+
+    object-fit: cover;
+  }
+.selected-row{
+    background-color: #053f6f;
+  border-radius: 25px 0px 0px 25px ;
+    color: white;
+}
+.h5-keyboards{
+  background-color: yellowgreen;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.h2-title{
+  background-color: #053f6f;
+  color: white;
+  margin-top: 10px;
+}
