@@ -6,29 +6,21 @@
 
 -->
  
-
- 
-
-
-
-
-
-
  
 
 <div class="container">
   <div class="row"  >
     <div class="col " style=" max-width: 30vh; ">
       <input type="text">
-      <ul class=""  style="overflow-y: scroll; max-height: 80vh; ">
+      <ul class=""  style="overflow-y: scroll; max-height: 90vh; ">
         <!-- 
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         -->
-        <li class="nav-link" *ngFor="let titles of data; let index = index;" [ngClass]="index == indexSel ?'selected-row':'asdasd' " (click)="makeThisCurrnt(index)">
-         {{(index+1)}} {{titles.title}}
+        <li class="nav-link" *ngFor="let titles of data; let index = index;" [ngClass]="index == indexSel ?'selected-row':'non-selected-row' " (click)="makeThisCurrnt(index)">
+         <span style="font-weight: bold;">{{(index+1)}}.</span> {{titles.title}}
         </li>
       </ul>
     </div>
@@ -43,24 +35,31 @@
       
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col description-card"  >
           <h5>Resumen</h5>
           {{selected.description}}
         </div>
-        <div class="col">
+        <div class="col description-card" style="margin-left: 10px;">
           <h5>Summary</h5>
           {{selected.description2}}
         </div>
       </div>
       <div class="row" style="margin-top: 20px;">
         <div class="col">
-          <h5>Ejemplo</h5>
-          {{selected.example}}
+          <div class="container description-card">
+            <h5>Ejemplo</h5>
+            {{selected.example}}   
+          </div>
+         
         </div>
         
-          <img class="image-content" src="{{selected.image}}" alt="" srcset="" style="max-height: 60%;">
+          <img class="image-content" src="{{selected.image}}" alt="" srcset="" style="">
        
       </div>
     </div>
   </div>
+
+</div>
+<div>
+  &#169; By Alan Zarate
 </div>

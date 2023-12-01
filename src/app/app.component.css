@@ -9,7 +9,8 @@
   
 .image-content {
      
-    max-width:60%; 
+    max-width:60%;
+    max-height: 50%; 
     display: block;
 
     object-fit: cover;
@@ -19,14 +20,32 @@
   border-radius: 25px 0px 0px 25px ;
     color: white;
 }
+.non-selected-row{
+  background-color: #b5b5b5;
+  color: black;
+  border-radius: 25px 0px 0px 25px ;
+}
 .h5-keyboards{
-  background-color: yellowgreen;
+  background-color: #3081D0;
   padding: 10px;
-  font-weight: bold;
+  font-weight: normal;
   border-radius: 10px;
+  color: white;
 }
 .h2-title{
   background-color: #053f6f;
   color: white;
   margin-top: 10px;
+}
+h5{
+  font-weight: bold;
+}
+.description-card{
+  background-color: rgb(187, 221, 247);
+  border-radius: 10px ;
+  padding-bottom: 10px;
+}
+.description-card h5{
+  border-radius: 0px 0px 25px 25px ;
+  background-color: #6DB9EF; text-align: center;
 }
